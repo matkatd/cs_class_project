@@ -1,0 +1,344 @@
+[
+  {
+    "courseNumber": "CS101",
+    "className": "Introduction to Computer Science",
+    "sections": [
+      {
+        "professor": "Dr. Smith",
+        "roomNumber": 101,
+        "classTime": "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        "professor": "Prof. Johnson",
+        "roomNumber": 102,
+        "classTime": "TTH 1:00 PM - 2:30 PM"
+      }
+    ],
+    "prerequisites": [],
+    "description": "An introduction to the fundamentals of computer science."
+  },
+  {
+    "courseNumber": "CS201",
+    "className": "Data Structures and Algorithms",
+    "sections": [
+      {
+        "professor": "Dr. Anderson",
+        "roomNumber": 201,
+        "classTime": "MWF 11:30 AM - 1:00 PM"
+      },
+      {
+        "professor": "Prof. Williams",
+        "roomNumber": 202,
+        "classTime": "TTH 2:30 PM - 4:00 PM"
+      }
+    ],
+    "prerequisites": ["CS101"],
+    "description": "Study of fundamental data structures and algorithms."
+  },
+  {
+    "courseNumber": "CS301",
+    "className": "Database Management Systems",
+    "sections": [
+      {
+        "professor": "Dr. Davis",
+        "roomNumber": 301,
+        "classTime": "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        "professor": "Prof. Moore",
+        "roomNumber": 302,
+        "classTime": "TTH 3:00 PM - 4:30 PM"
+      }
+    ],
+    "prerequisites": ["CS201"],
+    "description": "Study of database design, implementation, and management."
+  },
+  {
+    "courseNumber": "CS401",
+    "className": "Software Engineering",
+    "sections": [
+      {
+        "professor": "Dr. Taylor",
+        "roomNumber": 401,
+        "classTime": "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        "professor": "Prof. Turner",
+        "roomNumber": 402,
+        "classTime": "TTH 10:00 AM - 11:30 AM"
+      }
+    ],
+    "prerequisites": ["CS301"],
+    "description": "Principles and practices of software development."
+  },
+  {
+    "courseNumber": "CS501",
+    "className": "Artificial Intelligence",
+    "sections": [
+      {
+        "professor": "Dr. White",
+        "roomNumber": 501,
+        "classTime": "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        "professor": "Prof. Black",
+        "roomNumber": 502,
+        "classTime": "TTH 4:00 PM - 5:30 PM"
+      }
+    ],
+    "prerequisites": ["CS401"],
+    "description": "Introduction to artificial intelligence concepts and techniques."
+  },
+  {
+    "courseNumber": "CS601",
+    "className": "Computer Graphics",
+    "sections": [
+      {
+        "professor": "Dr. Johnson",
+        "roomNumber": 601,
+        "classTime": "MWF 11:00 AM - 12:30 PM"
+      },
+      {
+        "professor": "Prof. Davis",
+        "roomNumber": 602,
+        "classTime": "TTH 2:00 PM - 3:30 PM"
+      }
+    ],
+    "prerequisites": ["CS301"],
+    "description": "Fundamentals of computer graphics and rendering techniques."
+  },
+  {
+    "courseNumber": "CS701",
+    "className": "Cybersecurity",
+    "sections": [
+      {
+        "professor": "Dr. Martinez",
+        "roomNumber": 701,
+        "classTime": "MWF 3:00 PM - 4:30 PM"
+      },
+      {
+        "professor": "Prof. Adams",
+        "roomNumber": 702,
+        "classTime": "TTH 9:00 AM - 10:30 AM"
+      }
+    ],
+    "prerequisites": ["CS401"],
+    "description": "Principles and practices of cybersecurity and information assurance."
+  },
+  {
+    "courseNumber": "CS801",
+    "className": "Machine Learning",
+    "sections": [
+      {
+        "professor": "Dr. Brown",
+        "roomNumber": 801,
+        "classTime": "MWF 10:30 AM - 12:00 PM"
+      },
+      {
+        "professor": "Prof. Wilson",
+        "roomNumber": 802,
+        "classTime": "TTH 1:30 PM - 3:00 PM"
+      }
+    ],
+    "prerequisites": ["CS501"],
+    "description": "Introduction to machine learning algorithms and applications."
+  },
+  {
+    "courseNumber": "CS901",
+    "className": "Distributed Systems",
+    "sections": [
+      {
+        "professor": "Dr. Taylor",
+        "roomNumber": 901,
+        "classTime": "MWF 2:30 PM - 4:00 PM"
+      },
+      {
+        "professor": "Prof. White",
+        "roomNumber": 902,
+        "classTime": "TTH 3:30 PM - 5:00 PM"
+      }
+    ],
+    "prerequisites": ["CS601"],
+    "description": "Study of distributed computing systems and algorithms."
+  },
+  {
+    "courseNumber": "CS1001",
+    "className": "Advanced Topics in Computer Science",
+    "sections": [
+      {
+        "professor": "Dr. Black",
+        "roomNumber": 1001,
+        "classTime": "MWF 1:30 PM - 3:00 PM"
+      },
+      {
+        "professor": "Prof. Brown",
+        "roomNumber": 1002,
+        "classTime": "TTH 4:30 PM - 6:00 PM"
+      }
+    ],
+    "prerequisites": ["CS801"],
+    "description": "Exploration of advanced topics and emerging trends in computer science."
+  },
+  {
+    "courseNumber": "CS1101",
+    "className": "Human-Computer Interaction",
+    "sections": [
+      {
+        "professor": "Dr. Adams",
+        "roomNumber": 1101,
+        "classTime": "MWF 11:30 AM - 1:00 PM"
+      },
+      {
+        "professor": "Prof. Turner",
+        "roomNumber": 1102,
+        "classTime": "TTH 2:30 PM - 4:00 PM"
+      }
+    ],
+    "prerequisites": ["CS601"],
+    "description": "Principles and techniques of human-computer interaction and user interface design."
+  },
+  {
+    "courseNumber": "CS1201",
+    "className": "Cloud Computing",
+    "sections": [
+      {
+        "professor": "Dr. Wilson",
+        "roomNumber": 1201,
+        "classTime": "MWF 9:30 AM - 11:00 AM"
+      },
+      {
+        "professor": "Prof. Turner",
+        "roomNumber": 1202,
+        "classTime": "TTH 1:00 PM - 2:30 PM"
+      }
+    ],
+    "prerequisites": ["CS901"],
+    "description": "Introduction to cloud computing architectures and services."
+  },
+  {
+    "courseNumber": "CS1301",
+    "className": "Computer Vision",
+    "sections": [
+      {
+        "professor": "Dr. Moore",
+        "roomNumber": 1301,
+        "classTime": "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        "professor": "Prof. Adams",
+        "roomNumber": 1302,
+        "classTime": "TTH 10:30 AM - 12:00 PM"
+      }
+    ],
+    "prerequisites": ["CS801"],
+    "description": "Fundamentals of computer vision algorithms and applications."
+  },
+  {
+    "courseNumber": "CS1401",
+    "className": "Natural Language Processing",
+    "sections": [
+      {
+        "professor": "Dr. Turner",
+        "roomNumber": 1401,
+        "classTime": "MWF 1:00 PM - 2:30 PM"
+      },
+      {
+        "professor": "Prof. Brown",
+        "roomNumber": 1402,
+        "classTime": "TTH 3:00 PM - 4:30 PM"
+      }
+    ],
+    "prerequisites": ["CS1101"],
+    "description": "Study of natural language processing techniques and applications."
+  },
+  {
+    "courseNumber": "CS1501",
+    "className": "Embedded Systems",
+    "sections": [
+      {
+        "professor": "Dr. White",
+        "roomNumber": 1501,
+        "classTime": "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        "professor": "Prof. Wilson",
+        "roomNumber": 1502,
+        "classTime": "TTH 1:30 PM - 3:00 PM"
+      }
+    ],
+    "prerequisites": ["CS901"],
+    "description": "Introduction to embedded systems design and programming."
+  },
+  {
+    "courseNumber": "CS1601",
+    "className": "Computer Ethics",
+    "sections": [
+      {
+        "professor": "Dr. Davis",
+        "roomNumber": 1601,
+        "classTime": "MWF 11:30 AM - 1:00 PM"
+      },
+      {
+        "professor": "Prof. Martinez",
+        "roomNumber": 1602,
+        "classTime": "TTH 2:30 PM - 4:00 PM"
+      }
+    ],
+    "prerequisites": [],
+    "description": "Ethical considerations in the field of computer science."
+  },
+  {
+    "courseNumber": "CS1701",
+    "className": "Blockchain Technology",
+    "sections": [
+      {
+        "professor": "Dr. Garcia",
+        "roomNumber": 1701,
+        "classTime": "MWF 9:00 AM - 10:30 AM"
+      },
+      {
+        "professor": "Prof. Moore",
+        "roomNumber": 1702,
+        "classTime": "TTH 3:00 PM - 4:30 PM"
+      }
+    ],
+    "prerequisites": ["CS901"],
+    "description": "Study of blockchain technology and its applications."
+  },
+  {
+    "courseNumber": "CS1801",
+    "className": "Game Development",
+    "sections": [
+      {
+        "professor": "Dr. Taylor",
+        "roomNumber": 1801,
+        "classTime": "MWF 2:00 PM - 3:30 PM"
+      },
+      {
+        "professor": "Prof. White",
+        "roomNumber": 1802,
+        "classTime": "TTH 10:00 AM - 11:30 AM"
+      }
+    ],
+    "prerequisites": ["CS601"],
+    "description": "Introduction to game development principles and techniques."
+  },
+  {
+    "courseNumber": "CS1901",
+    "className": "Quantum Computing",
+    "sections": [
+      {
+        "professor": "Dr. Black",
+        "roomNumber": 1901,
+        "classTime": "MWF 3:00 PM - 4:30 PM"
+      },
+      {
+        "professor": "Prof. Adams",
+        "roomNumber": 1902,
+        "classTime": "TTH 9:00 AM - 10:30 AM"
+      }
+    ],
+    "prerequisites": ["CS801"],
+    "description": "Study of quantum computing principles and algorithms."
+  }
+]

@@ -20,7 +20,7 @@ type Quote = {
   author: string;
 };
 
-const QuotesComponent = () => {
+const MainClassesPage = () => {
   const [quotes, setQuotes] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
@@ -34,7 +34,7 @@ const QuotesComponent = () => {
 
   useEffect(() => {
     // Fetch quotes from the external JSON file
-    fetch("/quotes.json")
+    fetch("/classes.json")
       .then((response) => response.json())
       .then((data) => {
         setQuotes(data);
@@ -167,4 +167,4 @@ const QuotesComponent = () => {
   );
 };
 
-export default QuotesComponent;
+export default MainClassesPage;
