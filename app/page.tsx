@@ -11,7 +11,7 @@ import {
   InputLabel,
   FormControl,
 } from "@mui/material";
-import { ClassObj } from "@/public/types";
+import { Course } from "@/public/types";
 import { ClassCard } from "@/components/ClassCard";
 
 const MainClassesPage = () => {
@@ -35,17 +35,15 @@ const MainClassesPage = () => {
         // Extract unique categories
         const uniqueClassStandings = [
           ...new Set<string>(
-            data.flatMap((classObj: ClassObj) => classObj.classStanding)
+            data.flatMap((Course: Course) => Course.classStanding)
           ),
         ];
         const uniqueEmphases = [
-          ...new Set<string>(
-            data.flatMap((classObj: ClassObj) => classObj.emphasis)
-          ),
+          ...new Set<string>(data.flatMap((Course: Course) => Course.emphasis)),
         ];
         const uniqueDifficulties = [
           ...new Set<string>(
-            data.flatMap((classObj: ClassObj) => classObj.perceivedDifficulty)
+            data.flatMap((Course: Course) => Course.perceivedDifficulty)
           ),
         ];
         setEmphases(uniqueEmphases);
@@ -58,10 +56,8 @@ const MainClassesPage = () => {
   useEffect(() => {
     // Filter subcategories based on the selected category
     const filteredEmphases = classes
-      .filter(
-        (classObj: ClassObj) => classObj.classStanding == selectedClassStanding
-      )
-      .flatMap((classObj: ClassObj) => classObj.emphasis);
+      .filter((Course: Course) => Course.classStanding == selectedClassStanding)
+      .flatMap((Course: Course) => Course.emphasis);
 
     // Extract unique subcategories
     const uniqueSubcategories = [...new Set(filteredEmphases)];
@@ -152,15 +148,15 @@ const MainClassesPage = () => {
       {/* Render quotes based on selected category and subcategory */}
       {classes
         .filter(
-          (classObj: ClassObj) =>
+          (Course: Course) =>
             (!selectedClassStanding ||
-              classObj.classStanding == selectedClassStanding) &&
-            (!selectedEmphasis || classObj.emphasis == selectedEmphasis) &&
+              Course.classStanding == selectedClassStanding) &&
+            (!selectedEmphasis || Course.emphasis == selectedEmphasis) &&
             (!selectedDifficulty ||
-              classObj.perceivedDifficulty === selectedDifficulty)
+              Course.perceivedDifficulty === selectedDifficulty)
         )
-        .map((classObj: ClassObj) => (
-          <ClassCard key={classObj.courseName} classObj={classObj} />
+        .map((Course: Course) => (
+          <ClassCard key={Course.courseName} classObj={Course} />
         ))}
     </div>
   );

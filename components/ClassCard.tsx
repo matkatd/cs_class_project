@@ -1,18 +1,18 @@
-import { ClassObj } from "@/public/types";
+import { Course } from "@/public/types";
 import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 
 type ClassCardProps = {
-  classObj: ClassObj;
+  classObj: Course;
 };
 
 export const ClassCard = ({ classObj }: ClassCardProps) => (
-  <Card>
+  <Card sx={{ height: "11rem" }}>
     <CardContent>
-      <Typography variant="h5">
+      <Typography fontSize={"1.3rem"}>
         {classObj.courseName} - {classObj.courseTitle}
       </Typography>
-      <Typography variant="body1">{classObj.description}</Typography>
+      <Typography>Credits: {classObj.creditHours}</Typography>
     </CardContent>
   </Card>
 );

@@ -7,9 +7,7 @@
     "creditHours": 4,
     "description": "Advanced software development with an object-oriented focus. Design, implementation, and testing of medium-sized programs including a server program.",
     "prerequisites": ["CS235"],
-    "perceivedDifficulty": 4,
-    "ranking": 5,
-    "core": true
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Advanced Algorithms and Problem Solving",
@@ -19,9 +17,7 @@
     "creditHours": 3,
     "description": "This course will help students to become better at problem solving, increasing their ability to excel at technical/coding interviews (a challenging part of the hiring/interviewing process). Students will build on the algorithms and problem-solving strategies that they were taught and had limited practice with in CS 312. learning primarily through targeted practice. This will result in (1) strengthened skills in each style of problem-solving strategy and (2) the ability to quickly decide which strategy(ies) to apply to a given problem. Students are expected to spend 6+ hours outside of class each week solving interview-type problems.",
     "prerequisites": ["CS312"],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Advanced Techniques in Human Computer Interaction",
@@ -31,21 +27,17 @@
     "creditHours": 3,
     "description": "This class combines designing the user experience with implementing the technology. Students learn website design, information architecture, and how to design for the broader ecosystem of use. Finally, students will learn principles specifically relevant to website design and information architecture. Web design is one of the most common UX jobs and so this makes their skills highly marketable.",
     "prerequisites": ["CS256", "CS260"],
-    "perceivedDifficulty": 3,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Algorithm Design and Analysis",
     "courseName": "CS312",
     "classStanding": "Junior",
-    "emphasis": "Base",
+    "emphasis": "Software Engineering",
     "creditHours": 3,
     "description": "A study of the design and analysis of algorithms as solutions to problems, including dynamic programming, linear programming, greedy algorithms, divide-and-conquer algorithms, graph algorithms, and intelligent search algorithms.",
     "prerequisites": ["CS236"],
-    "perceivedDifficulty": 5,
-    "ranking": 2,
-    "core": true
+    "perceivedDifficulty": 5
   },
   {
     "courseTitle": "Algorithmic Languages and Compilers",
@@ -55,9 +47,7 @@
     "creditHours": 3,
     "description": "Formal description of algorithmic languages and techniques used in their compilation: semantics, ambiguities, procedures, replication, iteration, recursion.",
     "prerequisites": ["CS340"],
-    "perceivedDifficulty": 4,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Blockchain Technologies",
@@ -67,9 +57,7 @@
     "creditHours": 3,
     "description": "Technical underpinnings of blockchain-based systems, including cryptocurrency, smart contracts, decentralized finance (De-Fi), and Web3. Explores which problems are suitable for a blockchain-based solution and discusses arguments in favor and against blockchain systems.",
     "prerequisites": ["CS312"],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Computer Communications and Networking",
@@ -79,9 +67,7 @@
     "creditHours": 3,
     "description": "Introduction to data communications and computer networking. Communications fundamentals, computer networks, software, architecture, telecommunications, regulation, standards.",
     "prerequisites": ["CS324"],
-    "perceivedDifficulty": 2,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Computer Graphics",
@@ -91,21 +77,17 @@
     "creditHours": 3,
     "description": "Interactive computer graphics systems programming and architecture.",
     "prerequisites": ["CS355"],
-    "perceivedDifficulty": 4,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Computer Security",
     "courseName": "CS465",
     "classStanding": "Senior",
-    "emphasis": "Cybersecurity",
+    "emphasis": "Other",
     "creditHours": 3,
     "description": "Introduction to computer security fundamentals: confidentiality, integrity, authentication, and access control. Secret key and public key cryptography, network security protocols, viruses, and fire walls.",
     "prerequisites": ["CS324"],
-    "perceivedDifficulty": 5,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 5
   },
   {
     "courseTitle": "Computer Vision",
@@ -115,9 +97,7 @@
     "creditHours": 3,
     "description": "Introduction to fundamental concepts and algorithms of computer vision, including feature extraction, detection, segmentation, registration, recognition, motion, 3D vision, and image understanding. Applies techniques from image processing, geometry, Bayesian methods, optimization, and machine learning to computer vision problems.",
     "prerequisites": ["CS312"],
-    "perceivedDifficulty": 4,
-    "ranking": 1,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Concepts of Programming Languages",
@@ -127,9 +107,7 @@
     "creditHours": 3,
     "description": "Principles and concepts characterizing high-level computer programming languages, process and data abstraction, encapsulation, inheritance, functional programming, logic programming, scanners, and parsers.",
     "prerequisites": ["CS236", "CS260"],
-    "perceivedDifficulty": 2,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Data Structures and Algorithms",
@@ -139,9 +117,7 @@
     "creditHours": 3,
     "description": "Fundamental data structures and algorithms of computer science; basic algorithm analysis; recursion; sorting and searching; lists, stacks, queues, trees, hashing; object-oriented data abstraction.",
     "prerequisites": ["CS111"],
-    "perceivedDifficulty": 2,
-    "ranking": 5,
-    "core": true
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Database Modeling Concepts",
@@ -151,9 +127,7 @@
     "creditHours": 3,
     "description": "Database models: relational, deductive, object-oriented. Integrity constraints, query languages, database design.",
     "prerequisites": ["CS240"],
-    "perceivedDifficulty": 2,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Discrete Structures",
@@ -163,9 +137,7 @@
     "creditHours": 3,
     "description": "Introduction to grammars and parsing; predicate and propositional logic; proof techniques; sets, functions, relations, relational data model; graphs and graph algorithms.",
     "prerequisites": ["CS235"],
-    "perceivedDifficulty": 4,
-    "ranking": 3,
-    "core": true
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Ethics and Computers in Society",
@@ -175,9 +147,7 @@
     "creditHours": 2,
     "description": "Societal impact of computer technology, the computer scientist's place in society, ethical issues. Reading, discussion, and writing seminar.",
     "prerequisites": ["CS240", "WRTG316"],
-    "perceivedDifficulty": 2,
-    "ranking": 2,
-    "core": true
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "How to Program",
@@ -187,9 +157,7 @@
     "creditHours": 3,
     "description": "Introduction to programming and computer science for those with no prior programming experience. Focuses on the basic aspects of programming, with an emphasis on core principles. Labs provide a supportive environment to learn how to program with peers. Weekly discussions will introduce some of the many ways computer science interacts with society. Programming assignments will demonstrate how to use computing in a variety of disciplines.",
     "prerequisites": [],
-    "perceivedDifficulty": 1,
-    "ranking": 4,
-    "core": true
+    "perceivedDifficulty": 1
   },
   {
     "courseTitle": "Interactive Graphics and Image Processing",
@@ -199,21 +167,17 @@
     "creditHours": 3,
     "description": "Introduces basic concepts of computer graphics and image processing. Includes characteristics of physical cameras and displays; color models; basic image processing algorithms: 2D and 3D homogeneous coordinate transformations; fundamentals of 3D rendering geometry; lighting and shading: image warping and texture mapping; and frequency-domain processing.",
     "prerequisites": ["CS240"],
-    "perceivedDifficulty": 4,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Introduction to Computational Theory",
     "courseName": "CS252",
     "classStanding": "Sophomore",
-    "emphasis": "Base",
+    "emphasis": "Software Engineering",
     "creditHours": 3,
     "description": "Finite state automata, regular languages, lexical analysis; push-down automata, context-free languages, parsing; Turing machines and unrestricted grammars; computability complexity, NP-completeness.",
     "prerequisites": [],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": true
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Introduction to Computer Science",
@@ -223,9 +187,7 @@
     "creditHours": 3,
     "description": "Teaches how to design, develop, reason about, and test programs. Topics include higher-order functions, object-oriented programming, recursion, algorithms, data structures, decomposition, interpreters, and regular expressions.",
     "prerequisites": [],
-    "perceivedDifficulty": 2,
-    "ranking": 4,
-    "core": true
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Introduction to Computer Systems",
@@ -235,9 +197,7 @@
     "creditHours": 3,
     "description": "How a computer works to execute sequential code: low level data representation and abstraction, the relationship between C and assembly, computer architecture and pipelining, the memory hierarchy, dynamic memory allocation, and linking.",
     "prerequisites": ["CS235"],
-    "perceivedDifficulty": 3,
-    "ranking": 1,
-    "core": true
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Introduction to Data Science",
@@ -247,9 +207,7 @@
     "creditHours": 3,
     "description": "statistics; linear algebra; machine learning; data cleaning and visualization; data literacy; decomposing data science problems; critical thinking about analysis; potential pitfalls in data science",
     "prerequisites": [],
-    "perceivedDifficulty": 2,
-    "ranking": 1,
-    "core": false
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Introduction to Human Computer Interaction",
@@ -259,9 +217,7 @@
     "creditHours": 3,
     "description": "Design user experiences with technology that make a meaningful difference in people’s lives. Methods to establish user needs, derive designs, assess tradeoffs, and report results. Develop and iterate prototypes with feedback from representative users.",
     "prerequisites": [],
-    "perceivedDifficulty": 2,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 2
   },
   {
     "courseTitle": "Linear Programming and Convex Optimization",
@@ -271,9 +227,7 @@
     "creditHours": 3,
     "description": "Optimization, problem formulation, and solution algorithms, including simplex and interior point methods. Applications from control, data mining, finance, game theory, learning, network flow, operations research, and statistical estimation.",
     "prerequisites": ["MATH213", "MATH215"],
-    "perceivedDifficulty": 4,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Mobile and Ubiquitous Human-Computer Interaction",
@@ -283,9 +237,7 @@
     "creditHours": 3,
     "description": "Iterative user experience design for mobile and ubiquitous computing with an emphasis on conceptualization and prototyping in specific contexts. Complete an open-ended project from initial design through functional prototype, with design and critique sessions.",
     "prerequisites": ["CS356"],
-    "perceivedDifficulty": 4,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Operating Systems Design",
@@ -295,21 +247,17 @@
     "creditHours": 3,
     "description": "Principles and concepts of operating systems design and the implementation of an operating system.",
     "prerequisites": ["CS224", "CS240"],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Software Design",
     "courseName": "CS340",
     "classStanding": "Junior",
-    "emphasis": "Base",
+    "emphasis": "Software Engineering",
     "creditHours": 3,
     "description": "Use design, development, testing and refactoring techniques to build and evolve reliable, maintainable and scalable software systems. Covers a wide range of design patterns and principles. Also introduces students to software architecture and architectural patterns.",
     "prerequisites": ["CS240", "CS260"],
-    "perceivedDifficulty": 4,
-    "ranking": 4,
-    "core": true
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Software Engineering",
@@ -319,21 +267,17 @@
     "creditHours": 3,
     "description": "Analysis, design, implementation, and testing of significant software systems.",
     "prerequisites": ["CS340"],
-    "perceivedDifficulty": 4,
-    "ranking": 3,
-    "core": false
+    "perceivedDifficulty": 4
   },
   {
     "courseTitle": "Systems Programming",
     "courseName": "CS324",
     "classStanding": "Junior",
-    "emphasis": "Base",
+    "emphasis": "Software Engineering",
     "creditHours": 3,
     "description": "Systems programming principles and concepts, including Linux systems programming, multiprocessing, concurrency, exceptional control flow, caching, sockets, protocols, and non-blocking I/O.",
     "prerequisites": ["CS224"],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": true
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Testing, Analysis, and Verification",
@@ -343,21 +287,17 @@
     "creditHours": 3,
     "description": "Fundamental challenge of software quality through the entire software product life-cycle. Sound engineering principles to ensure and assure quality at each stage of the life-cycle with an emphasis in early stages on testing techniques, dynamic and static program analysis, and formal verification for high assurance systems. Practical application to software artifacts and algorithm implementation connects the course material to real world application in the field.",
     "prerequisites": ["CS240"],
-    "perceivedDifficulty": 3,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Verification and Validation",
     "courseName": "CS486",
     "classStanding": "Senior",
-    "emphasis": "Cybersecurity",
+    "emphasis": "Other",
     "creditHours": 3,
     "description": "Foundational topics in verification and validation; the application of logic to building correct systems. Covers logics to formally specify properties of systems, verifications of basic systems, and advanced topics in formal verification for complex systems.",
     "prerequisites": ["CS312"],
-    "perceivedDifficulty": 5,
-    "ranking": 2,
-    "core": false
+    "perceivedDifficulty": 5
   },
   {
     "courseTitle": "Voice User Interfaces",
@@ -367,9 +307,7 @@
     "creditHours": 3,
     "description": "Methods and development platforms for Voice User Interfaces. Principles of effective design; differences from visual or menu-based interfaces’ mechanics of automatic speech recognition, intent detection, slot filling, dialog state tracking, text generation, and knowledge representation.",
     "prerequisites": [],
-    "perceivedDifficulty": 3,
-    "ranking": 1,
-    "core": false
+    "perceivedDifficulty": 3
   },
   {
     "courseTitle": "Web Programming",
@@ -379,8 +317,6 @@
     "creditHours": 3,
     "description": "Introduction to web application design and implementation. Both front end and back end development with an emphasis on REST architectures.",
     "prerequisites": ["CS111"],
-    "perceivedDifficulty": 4,
-    "ranking": 5,
-    "core": true
+    "perceivedDifficulty": 4
   }
 ]

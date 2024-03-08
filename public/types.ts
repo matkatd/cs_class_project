@@ -1,10 +1,12 @@
-export type ClassObj = {
+export type Course = {
   courseTitle: string;
   courseName: string;
   classStanding: string;
-  creditsHours: number;
-  prerequisites: string[]; // List of courseTitles
-  description: string;
   emphasis: string;
+  creditHours: number;
+  description: string;
+  prerequisites: string[]; // List of courseTitles
   perceivedDifficulty: number;
+  ranking: number;
+  core: boolean;
 };
