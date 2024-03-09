@@ -20,7 +20,7 @@ export const ClassCard = ({ classObj }: ClassCardProps) => (
       </Typography>
       <Typography>Credits: {classObj.creditHours}</Typography>
     </CardContent>
-    <CardActionArea sx={{ background: "#0057B8", borderRadius: "0 0 5px 5px" }}>
+    <CardActionArea sx={{ background: "#0057B8", borderRadius: "0 0 2px 2px" }}>
       <CardContent>
         <Typography color="whitesmoke">See More</Typography>
       </CardContent>

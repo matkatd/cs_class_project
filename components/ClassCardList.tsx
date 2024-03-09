@@ -13,7 +13,7 @@ export const ClassCardList = ({
   categoryName,
 }: ClassCardListProps) => (
   <Container sx={{ mb: "3rem", mt: "3rem" }}>
-    <Typography mb="1rem" variant="h4">
+    <Typography mb="1rem" variant="h4" fontWeight={"bold"}>
       {categoryName}
     </Typography>
     <Grid container wrap="wrap" spacing={5}>

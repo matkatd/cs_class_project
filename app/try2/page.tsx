@@ -1,7 +1,7 @@
 "use client";
 import { ClassCardList } from "@/components/ClassCardList";
 import { Course } from "@/public/types";
-import { Box, Container, Divider, Stack, Typography } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 
 type MainPageProps = {};
