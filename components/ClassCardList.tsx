@@ -12,7 +12,7 @@ export const ClassCardList = ({
   courses,
   categoryName,
 }: ClassCardListProps) => (
-  <Container>
+  <Container sx={{ mb: "3rem" }}>
     <Typography mb="1rem" variant="h4">
       {categoryName}
     </Typography>
