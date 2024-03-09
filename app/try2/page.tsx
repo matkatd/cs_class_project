@@ -34,10 +34,12 @@ const MainPage = ({}: MainPageProps) => {
     // Group classes by emphasis
     const emphasisGroups = emphases.map((emphasis: string) => {
       const courses = classes.filter(
-        (course: Course) => course.emphasis === emphasis
+        (course: Course) => course.emphasis === emphasis,
       );
+      const sortedData = courses.sort((a, b) => b.ranking - a.ranking);
       return { emphasis, courses };
     });
+
     setClassGroups(emphasisGroups);
   }, [emphases, classes]);
 
