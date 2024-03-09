@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <style>{"body {  margin: 0; padding: 0; }"}</style>
       <body>{children}</body>
     </html>
   );

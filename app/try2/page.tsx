@@ -1,7 +1,7 @@
 "use client";
 import { ClassCardList } from "@/components/ClassCardList";
 import { Course } from "@/public/types";
-import { Container, Stack } from "@mui/material";
+import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 
 type MainPageProps = {};
@@ -36,22 +36,38 @@ const MainPage = ({}: MainPageProps) => {
       const courses = classes.filter(
         (course: Course) => course.emphasis === emphasis
       );
+
       return { emphasis, courses };
     });
     setClassGroups(emphasisGroups);
   }, [emphases, classes]);
 
   return (
-    <Stack justifyContent={"center"} m={"0 auto"}>
-      {classGroups.map((emphasisGroup: EmphasisGroup) => (
-        <ClassCardList
-          key={emphasisGroup.emphasis}
-          courses={emphasisGroup.courses}
-          categoryName={emphasisGroup.emphasis}
-        />
-      ))}
-      {/* <ClassCardList courses={classes} categoryName="Core Classes" /> */}
-    </Stack>
+    <Box sx={{ background: "whitesmoke" }}>
+      <Box sx={{ background: "#012D5F" }}>
+        <Typography
+          color="whitesmoke"
+          variant="h2"
+          mb={"2rem"}
+          padding={"1rem 2rem"}
+          fontWeight={"medium"}
+        >
+          Course Catalog
+        </Typography>
+      </Box>
+      <Stack justifyContent={"center"} m={"0 auto"}>
+        {classGroups.map((emphasisGroup: EmphasisGroup) => (
+          <>
+            <ClassCardList
+              key={emphasisGroup.emphasis}
+              courses={emphasisGroup.courses}
+              categoryName={emphasisGroup.emphasis}
+            />
+            <Divider variant="middle" />
+          </>
+        ))}
+      </Stack>
+    </Box>
   );
 };
 

@@ -1,5 +1,11 @@
 import { Course } from "@/public/types";
-import { Card, CardContent, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 type ClassCardProps = {
@@ -7,12 +13,17 @@ type ClassCardProps = {
 };
 
 export const ClassCard = ({ classObj }: ClassCardProps) => (
-  <Card sx={{ height: "11rem" }}>
-    <CardContent>
+  <Card>
+    <CardContent sx={{ height: "6rem" }}>
       <Typography fontSize={"1.3rem"}>
         {classObj.courseName} - {classObj.courseTitle}
       </Typography>
       <Typography>Credits: {classObj.creditHours}</Typography>
     </CardContent>
+    <CardActionArea sx={{ background: "#0057B8", borderRadius: "0 0 5px 5px" }}>
+      <CardContent>
+        <Typography color="whitesmoke">See More</Typography>
+      </CardContent>
+    </CardActionArea>
   </Card>
 );
