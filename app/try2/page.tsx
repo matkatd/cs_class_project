@@ -36,7 +36,7 @@ const MainPage = ({}: MainPageProps) => {
       const courses = classes.filter(
         (course: Course) => course.emphasis === emphasis
       );
-      const sortedData = courses.sort((a, b) => b.ranking - a.ranking);
+      courses.sort((a, b) => b.ranking - a.ranking);
       return { emphasis, courses };
     });
 
