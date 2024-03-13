@@ -16,9 +16,19 @@ export const ClassCardList = ({
     <Typography mb="1rem" variant="h4" fontWeight={500}>
       {categoryName}
     </Typography>
-    <Grid container wrap="wrap" spacing={5}>
+    <Grid
+      container
+      wrap="wrap"
+      spacing={5}
+      sx={{
+        "@media (max-width: 600px)": {
+          justifyContent: "center",
+          gap: "1rem",
+        },
+      }}
+    >
       {courses.map((course) => (
-        <Grid xs={4} item key={course.courseName}>
+        <Grid xs={8} sm={6} md={4} item key={course.courseName}>
           <ClassCard classObj={course} />
         </Grid>
       ))}
