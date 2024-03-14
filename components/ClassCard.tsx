@@ -34,7 +34,11 @@ export const ClassCard = ({ classObj }: ClassCardProps) => {
           <Typography color="whitesmoke">See More</Typography>
         </CardContent>
       </CardActionArea>
-      <ClassDialog showDialog={showDialog} course={classObj}></ClassDialog>
+      <ClassDialog
+        showDialog={showDialog}
+        course={classObj}
+        onClose={setShowDialog}
+      ></ClassDialog>
     </Card>
   );
 };

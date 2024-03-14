@@ -1,37 +1,43 @@
 import React from "react";
 import { Dialog, Paper, Typography, Button, Grid } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import { Course } from "@/public/types";
 
 type ClassDialogProps = {
   showDialog: boolean;
-  onClose: () => void;
   course: Course;
+  onClose: (showDialog: boolean) => void;
 };
 
 export const ClassDialog = ({
   showDialog,
-  onClose,
   course,
+  onClose,
 }: ClassDialogProps) => {
+  const closeDialog = () => {
+    onClose(!showDialog);
+  };
+
   return (
-    <Dialog open={showDialog} onClose={onClose}>
+    <Dialog open={showDialog}>
       <Paper sx={{ padding: "1.5rem", position: "relative" }}>
         <Button
-          onClick={onClose}
+          onClick={closeDialog}
           sx={{
             position: "absolute",
             top: 0,
             right: 0,
+            padding: "0.5rem",
           }}
         >
-          X
+          <CloseIcon />
         </Button>
         <Typography mb="1rem" variant="h4" fontWeight={500} fontSize="1rem">
           <h1>
             {course.courseName} - {course.courseTitle}
           </h1>
           <p>{course.description}</p>
-          <Grid container spacing={0}>
+          <Grid container width={"75%"}>
             <Grid item xs={6}>
               <p>
                 <strong>Credit Hours:</strong> {course.creditHours}
