@@ -36,8 +36,8 @@ export const ClassDialog = ({
           <h1>
             {course.courseName} - {course.courseTitle}
           </h1>
-          <p>{course.description}</p>
-          <Grid container width={"75%"}>
+          <p style={{ color: "#444444" }}>{course.description}</p>
+          <Grid container width={"75%"} sx={{ color: "#444444" }}>
             <Grid item xs={6}>
               <p>
                 <strong>Credit Hours:</strong> {course.creditHours}
