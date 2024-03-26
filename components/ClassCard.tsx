@@ -29,14 +29,15 @@ export const ClassCard = ({ classObj }: ClassCardProps) => {
         <div style={{ display: "flex", alignItems: "center" }}>
           <Typography sx={{ color: "#444444" }}>
             Student Rating: {classObj.ranking}/5
-          </Typography>{" "}
+          </Typography>
           <Tooltip
             title="Student rating based off of the average rating, from 1 (terrible) through 5 (incredible), of all students who have taken this class"
             arrow
+            sx={{ marginLeft: "5px" }}
           >
-            <Button>
-              <InfoOutlinedIcon sx={{ color: "grey", fontSize: "small" }} />
-            </Button>
+            <InfoOutlinedIcon
+              sx={{ color: "grey", fontSize: "small", marginLeft: "1rem" }}
+            />
           </Tooltip>
         </div>
       </CardContent>

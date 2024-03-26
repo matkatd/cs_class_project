@@ -6,6 +6,7 @@ import "./global.css";
 import { Box, Divider, Paper, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import React, { useEffect, useMemo, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 type MainPageProps = {};
 type EmphasisGroup = {
@@ -46,6 +47,8 @@ const MainPage = ({}: MainPageProps) => {
     setClassGroups(emphasisGroups);
   }, [emphases, classes]);
 
+  const [activeId, setActiveId] = useState<string>("");
+
   return (
     <Box sx={{ background: "whitesmoke" }}>
       <Box sx={{ background: "#012D5F" }}>
@@ -59,10 +62,10 @@ const MainPage = ({}: MainPageProps) => {
         </Typography>
       </Box>
       <Grid container>
-        <Grid xs={4}>
-          <TableOfContents emphases={emphases} />
+        <Grid xs={3}>
+          <TableOfContents activeId={activeId} emphases={emphases} />
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={9}>
           <Stack justifyContent={"center"} m={"0 auto"}>
             {classGroups.map((emphasisGroup: EmphasisGroup) => (
               <>
@@ -70,6 +73,7 @@ const MainPage = ({}: MainPageProps) => {
                   key={emphasisGroup.emphasis}
                   courses={emphasisGroup.courses}
                   categoryName={emphasisGroup.emphasis}
+                  setActiveId={setActiveId}
                 />
                 <Divider variant="middle" />
               </>
