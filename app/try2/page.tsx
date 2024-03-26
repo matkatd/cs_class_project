@@ -1,7 +1,10 @@
 "use client";
 import { ClassCardList } from "@/components/ClassCardList";
+import { TableOfContents } from "@/components/TableOfContents";
 import { Course } from "@/public/types";
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import "./global.css";
+import { Box, Divider, Paper, Stack, Typography } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import React, { useEffect, useMemo, useState } from "react";
 
 type MainPageProps = {};
@@ -49,25 +52,31 @@ const MainPage = ({}: MainPageProps) => {
         <Typography
           color="whitesmoke"
           variant="h2"
-          mb={"2rem"}
           padding={"1rem 2rem"}
           fontWeight={"medium"}
         >
           Course Catalog
         </Typography>
       </Box>
-      <Stack justifyContent={"center"} m={"0 auto"}>
-        {classGroups.map((emphasisGroup: EmphasisGroup) => (
-          <>
-            <ClassCardList
-              key={emphasisGroup.emphasis}
-              courses={emphasisGroup.courses}
-              categoryName={emphasisGroup.emphasis}
-            />
-            <Divider variant="middle" />
-          </>
-        ))}
-      </Stack>
+      <Grid container>
+        <Grid xs={4}>
+          <TableOfContents emphases={emphases} />
+        </Grid>
+        <Grid xs={8}>
+          <Stack justifyContent={"center"} m={"0 auto"}>
+            {classGroups.map((emphasisGroup: EmphasisGroup) => (
+              <>
+                <ClassCardList
+                  key={emphasisGroup.emphasis}
+                  courses={emphasisGroup.courses}
+                  categoryName={emphasisGroup.emphasis}
+                />
+                <Divider variant="middle" />
+              </>
+            ))}
+          </Stack>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
