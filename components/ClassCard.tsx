@@ -36,7 +36,7 @@ export const ClassCard = ({ classObj }: ClassCardProps) => {
             sx={{ marginLeft: "5px" }}
           >
             <InfoOutlinedIcon
-              sx={{ color: "grey", fontSize: "small", marginLeft: "1rem" }}
+              sx={{ color: "grey", fontSize: "small", marginLeft: ".3rem" }}
             />
           </Tooltip>
         </div>

@@ -6,7 +6,6 @@ import "./global.css";
 import { Box, Divider, Paper, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import React, { useEffect, useMemo, useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 type MainPageProps = {};
 type EmphasisGroup = {
