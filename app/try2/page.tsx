@@ -3,7 +3,15 @@ import { ClassCardList } from "@/components/ClassCardList";
 import { TableOfContents } from "@/components/TableOfContents";
 import { Course } from "@/public/types";
 import "./global.css";
-import { Box, Divider, Paper, Stack, Typography } from "@mui/material";
+
+import {
+  Box,
+  Divider,
+  Paper,
+  Stack,
+  Typography,
+  TextField,
+} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import React, { useEffect, useMemo, useState } from "react";
 
@@ -37,7 +45,7 @@ const MainPage = ({}: MainPageProps) => {
     // Group classes by emphasis
     const emphasisGroups = emphases.map((emphasis: string) => {
       const courses = classes.filter(
-        (course: Course) => course.emphasis === emphasis
+        (course: Course) => course.emphasis === emphasis,
       );
       courses.sort((a, b) => b.ranking - a.ranking);
       return { emphasis, courses };
@@ -50,7 +58,9 @@ const MainPage = ({}: MainPageProps) => {
 
   return (
     <Box sx={{ background: "whitesmoke" }}>
-      <Box sx={{ background: "#012D5F" }}>
+      <Box
+        sx={{ background: "#012D5F", display: "flex", alignItems: "center" }}
+      >
         <Typography
           color="whitesmoke"
           variant="h2"
@@ -59,6 +69,23 @@ const MainPage = ({}: MainPageProps) => {
         >
           Course Catalog
         </Typography>
+        <Box
+          component="form"
+          sx={{
+            "& > :not(style)": {
+              m: 1,
+              backgroundColor: "white",
+              borderRadius: "20px",
+              width: "calc(25ch + 60px)",
+            },
+            marginLeft: "auto",
+            marginRight: "24px",
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField id="filled-basic" label="Search Class" variant="filled" />
+        </Box>
       </Box>
       <Grid container>
         <Grid xs={3}>
